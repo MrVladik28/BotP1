@@ -16,8 +16,8 @@ if __name__ == '__main__':
     print("Сколько тебе лет?")
     old = int(input())
     if old <= 20:
-      print("О так ты еще не мучеешся от боли в спине", name)
-else:
-      print("Сочуствую тебе", name)
+        print("О так ты еще не мучеешся от боли в спине", name)
+    else:
+        print("Сочуствую тебе", name)
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
