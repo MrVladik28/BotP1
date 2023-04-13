@@ -20,7 +20,27 @@ if __name__ == '__main__':
     else:
         print("Сочуствую тебе", name)
         print("Как у тебя дела")
-        n = int(input)
+        n = int(input())
+        if
+            это новое и все
+            
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
