@@ -19,5 +19,9 @@ if __name__ == '__main__':
         print("О так ты еще не мучеешся от боли в спине", name)
     else:
         print("Сочуствую тебе", name)
+        print("Как у тебя дела")
+        n = int(input)
+
+
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
