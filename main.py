@@ -22,7 +22,7 @@ if __name__ == '__main__':
         print("Как у тебя дела")
         n = int(input())
         if
-            это новое и все
+            это новое и все rfgfggfggfgfgf
             
 
 
