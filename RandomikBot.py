@@ -42,14 +42,14 @@ async def process_start_command(message: Message):
                                        'total_games': 0,
                                        'wins': 0}
 
-@dp.message(Command(commands=['Joke']))
+@dp.message(Command(commands=['joke']))
 async def process_Joke_command(message: Message):
-            await message.answer('Привет!\nДавай я тебе расскажу шутку"?\n\n'
-            await message.answer('Привет!\nДавай я тебе расскажу шутку"?\n\n'
+        await message.answer('Привет!\nДавай я тебе расскажу шутку"?\n\n'
                                  'Чтобы увидить шутку напиши команду /make fun of me')
 
 @dp.message(Command(commands=['Joke']))
-asyncdef process_Joke_command(message: Message):
+
+
 
 
 
