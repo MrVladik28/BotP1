@@ -45,9 +45,12 @@ async def process_start_command(message: Message):
 @dp.message(Command(commands=['joke']))
 async def process_Joke_command(message: Message):
         await message.answer('Привет!\nДавай я тебе расскажу шутку"?\n\n'
-                                 'Чтобы увидить шутку напиши команду /make fun of me')
+                            'Чтобы увидить шутку напиши команду /make fun of me')
 
-@dp.message(Command(commands=['Joke']))
+
+@dp.message(Command(commands=['make']))
+async def process_Joke_command(message: Message):
+    await message.answer('я тебе ничего не скажу так как я не знаю шуток \n\n')
 
 
 
