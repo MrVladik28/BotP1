@@ -1,13 +1,8 @@
-import random
-
-from aiogram import Bot, Dispatcher
-from aiogram.types import Message
-from aiogram.filters import Text, Command
-
 from aiogram import Bot, Dispatcher
 from aiogram.filters import CommandStart, Text
 from aiogram.types import (KeyboardButton, Message, ReplyKeyboardMarkup,
                            ReplyKeyboardRemove)
+
 
 # Вместо BOT TOKEN HERE нужно вставить токен вашего бота,
 # полученный у @BotFather
@@ -18,12 +13,12 @@ bot: Bot = Bot(token=API_TOKEN)
 dp: Dispatcher = Dispatcher()
 
 # Количество попыток, доступных пользователю в игре
-ATTEMPTS: int = 5
+
 
 # Словарь, в котором будут храниться данные пользователя
 users: dict = {}
 
-@dp.message(Command(commands=['играть']))
+@dp.message(Command(commands=['play']))
 async def process_start_command(message: Message):
     await message.answer('Привет!\nДавай сыграем в игру "Угадай число"?\n\n'
                          'Чтобы получить правила игры и список доступных '
@@ -119,7 +114,7 @@ async def process_Joke_command(message: Message):
 @dp.message(Command(commands=['help']))
 async def process_help_command(message: Message):
     await message.answer(f'Правила игры:\n\nЯ загадываю число от 1 до 100, '
-                         f'а вам нужно его угадать\nУ вас есть {ATTEMPTS} '
+                         f'а вам нужно его угадать\nУ вас есть  '
                          f'попыток\n\nДоступные команды:\n/help - правила '
                          f'игры и список команд\n/cancel - выйти из игры\n'
                          f'/stat - посмотреть статистику\n\nДавай сыграем?')
